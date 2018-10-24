@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WpfPlayground.Properties
+namespace WpfPlayground.Cm.Properties
 {
 
 

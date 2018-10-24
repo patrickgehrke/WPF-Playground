@@ -3,19 +3,16 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace WpfPlayground
+namespace WpfPlayground.Miscellaneous
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
+    public partial class GlobalExceptionHandling : Application
     {
-        protected override void OnStartup(StartupEventArgs e)
-        {
-            base.OnStartup(e);
-
-            InstallExceptionHandling();
-        }
+        /*
+            Usage in App.xaml.cs 
+            
+            Call InstallExceptionHandling() in OnStartup(StartupEventArgs e)
+             
+        */
 
         private void InstallExceptionHandling()
         {
@@ -39,7 +36,7 @@ namespace WpfPlayground
                 AssemblyName assembly = Assembly.GetExecutingAssembly().GetName();
                 msg = $"[ERROR] Unhandled exception in {assembly.Name} version: {assembly.Version}";
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //Add Log
             }
