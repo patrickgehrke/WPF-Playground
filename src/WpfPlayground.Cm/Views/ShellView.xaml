@@ -6,6 +6,8 @@
         mc:Ignorable="d"
         Title="ShellView" Height="300" Width="300">
     <Grid>
-        
+        <StackPanel>
+            <Button x:Name="Execute" Content="Execute Coroutine" Height="50" />
+        </StackPanel>
     </Grid>
 </Window>
