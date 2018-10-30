@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPlayground.Cm", "src\Wpf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPlayground.Miscellaneous", "src\WpfPlayground.Miscellaneous\WpfPlayground.Miscellaneous.csproj", "{DCD809BB-4C01-4249-B1CB-ACC717CEA021}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPlayground.MarqueeText", "src\WpfPlayground.MarqueeText\WpfPlayground.MarqueeText.csproj", "{914C99CE-C927-46F9-A946-99BD48F7329C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DCD809BB-4C01-4249-B1CB-ACC717CEA021}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCD809BB-4C01-4249-B1CB-ACC717CEA021}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCD809BB-4C01-4249-B1CB-ACC717CEA021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{914C99CE-C927-46F9-A946-99BD48F7329C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914C99CE-C927-46F9-A946-99BD48F7329C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914C99CE-C927-46F9-A946-99BD48F7329C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914C99CE-C927-46F9-A946-99BD48F7329C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
