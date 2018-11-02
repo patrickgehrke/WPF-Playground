@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfPlayground.FoundationExamples.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPlayground.FoundationExamples.TypeConverterExample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <ListBox>
+        <!--use address converter with property-style syntax-->
+        <local:Friend Name="Peter">
+            <local:Friend.Address>
+                <local:Address>
+                    <!--The address has no content property! 
+                        If the XAML parser finds a TypeConverter, 
+                        it is used to parse the value. 
+                        Otherwise an exception will be thrown.-->
+                    Milchstraße 17 12323 Moon
+                </local:Address>
+            </local:Friend.Address>
+        </local:Friend>
+
+        <!--without address converter-->
+        <local:Friend Name="Peter">
+            <local:Friend.Address>
+                <local:Address Street="Milchstraße"
+                               StreetNumber="17"
+                               ZipCode="12323"
+                               City="Moon" />
+            </local:Friend.Address>
+        </local:Friend>
+        
+        <!-- use address converter with attribut syntax -->
+        <local:Friend Name="Peter" Address="Milchstrasse 17 12323 Moon"/>
+    </ListBox>
+</Window>
