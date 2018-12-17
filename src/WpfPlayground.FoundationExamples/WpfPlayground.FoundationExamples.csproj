@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Panels\DiagonalPanel.cs" />
     <Compile Include="TypeConverterExample\Address.cs" />
     <Compile Include="TypeConverterExample\AddressConverter.cs" />
     <Compile Include="TypeConverterExample\Friend.cs" />

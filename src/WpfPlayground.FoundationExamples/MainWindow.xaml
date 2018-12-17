@@ -4,23 +4,36 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfPlayground.FoundationExamples.TypeConverterExample"
+        xmlns:myPanels="clr-namespace:WpfPlayground.FoundationExamples.Panels"
+        
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <ListBox>
-        <!--use address converter with property-style syntax-->
+
+    <myPanels:DiagonalPanel>
+        <Button Background="Yellow" Content="Yellow"/>
+        <Button Background="Red" Width="100" Content="Red"/>
+        <Button Background="Blue" Width="50" Content="Blue"/>
+        <TextBox Text="Layout. Much fun."/>
+    </myPanels:DiagonalPanel>
+    
+    
+    
+    
+    <!--<ListBox>
+        --><!--use address converter with property-style syntax--><!--
         <local:Friend Name="Peter">
             <local:Friend.Address>
                 <local:Address>
-                    <!--The address has no content property! 
+                    --><!--The address has no content property! 
                         If the XAML parser finds a TypeConverter, 
                         it is used to parse the value. 
-                        Otherwise an exception will be thrown.-->
+                        Otherwise an exception will be thrown.--><!--
                     Milchstraße 17 12323 Moon
                 </local:Address>
             </local:Friend.Address>
         </local:Friend>
 
-        <!--without address converter-->
+        --><!--without address converter--><!--
         <local:Friend Name="Peter">
             <local:Friend.Address>
                 <local:Address Street="Milchstraße"
@@ -30,7 +43,7 @@
             </local:Friend.Address>
         </local:Friend>
         
-        <!-- use address converter with attribut syntax -->
+        --><!-- use address converter with attribut syntax --><!--
         <local:Friend Name="Peter" Address="Milchstrasse 17 12323 Moon"/>
-    </ListBox>
+    </ListBox>-->
 </Window>
